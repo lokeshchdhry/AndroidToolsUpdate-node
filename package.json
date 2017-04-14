@@ -32,5 +32,11 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt": "~0.4.5"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "async": "^2.3.0",
+    "request": "^2.81.0",
+    "xml-stream": "^0.4.5",
+    "xml2js": "^0.4.17"
+  }
 }

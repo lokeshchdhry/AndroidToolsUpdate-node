@@ -1,0 +1,36 @@
+{
+  "name": "AndroidToolsUpdate-node",
+  "description": "Android tools update checker using node.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/lokeshchdhry/AndroidToolsUpdate-node",
+  "author": {
+    "name": "Lokesh Choudhary"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lokeshchdhry/AndroidToolsUpdate-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lokeshchdhry/AndroidToolsUpdate-node/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/lokeshchdhry/AndroidToolsUpdate-node/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": []
+}

@@ -1,26 +1,23 @@
 # AndroidToolsUpdate-node
 
 Android tools update checker using node.
+This tool will check for the following update avaliability:
+1. Android Platform Tools.
+2. Android Build Tools.
+3. Android SDK Tools.
+4. New Android platform.
+5. Android NDK.
 
-## Getting Started
-Install the module with: `npm install AndroidToolsUpdate-node`
+This tools can tun in the background checking android tools update for you every 30 minutes. For this you need to have `forever` installed (`$ [sudo] npm install forever -g`).
 
-```javascript
-var AndroidToolsUpdate_node = require('AndroidToolsUpdate-node');
-AndroidToolsUpdate_node.awesome(); // "awesome"
-```
+## Running node script as a background process.
+`forever start --spinSleepTime 5000 --minUptime 10000 -l <path to forever log> -o <path to forever output log> -a -e <path to forever error log> <path to index.js file in AndroidToolsUpdate-node/lib/index.js>  --killTree true`
 
-## Documentation
-_(Coming soon)_
+## Listing the node script details.
+`forever list`
 
-## Examples
-_(Coming soon)_
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
-_(Nothing yet)_
+## Stopping the node script.
+`forever stopall`
 
 ## License
 Copyright (c) 2017 Lokesh Choudhary  

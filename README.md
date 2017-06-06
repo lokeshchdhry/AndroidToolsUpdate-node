@@ -8,15 +8,17 @@ This tool will check for the following update avaliability:
 4. New Android platform.
 5. Android NDK.
 
-This tools can tun in the background checking android tools update for you every 30 minutes. For this you need to have `forever` installed (`$ [sudo] npm install forever -g`).
+This node script can run in the background checking android tools update for you every 30 minutes. For this you need to have `forever` installed (`$ [sudo] npm install forever -g`).
 
-## Running node script as a background process.
-`forever start --spinSleepTime 5000 --minUptime 10000 -l <path to forever log> -o <path to forever output log> -a -e <path to forever error log> <path to index.js file in AndroidToolsUpdate-node/lib/index.js>  --killTree true`
+### Running node script as a background process.
+```javascript
+forever start --spinSleepTime 5000 --minUptime 10000 -l <path to forever log> -o <path to forever output log> -a -e <path to forever error log> <path to index.js file in AndroidToolsUpdate-node/lib/index.js>  --killTree true
+```
 
-## Listing the node script details.
+### Listing the node script details.
 `forever list`
 
-## Stopping the node script.
+### Stopping the node script.
 `forever stopall`
 
 ## License
